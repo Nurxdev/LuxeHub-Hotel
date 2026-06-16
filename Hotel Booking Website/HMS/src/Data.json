@@ -1,0 +1,46 @@
+{
+  "Rooms": [
+    {
+      "id": "R1",
+      "name": "Classic Balcony Room",
+      "src": "/images/room-1.png",
+      "Price": "$500",
+      "description": "Aenean vehivula ligula eu rhoncus prottitor."
+    },
+    {
+      "id": "R2",
+      "name": "Superior Double Room",
+      "src": "/images/room-2.png",
+      "Price": "$300",
+      "description": "Aenean vehivula ligula eu rhoncus prottitor."
+    },
+    {
+      "id": "R3",
+      "name": "Delux Double Room",
+      "src": "/images/room-3.png",
+      "Price": "$450",
+      "description": "Aenean vehivula ligula eu rhoncus prottitor."
+    },
+    {
+      "id": "R4",
+      "name": "Superior Double Room",
+      "src": "/images/room-4.png",
+      "Price": "$450",
+      "description": "Aenean vehivula ligula eu rhoncus prottitor."
+    },
+    {
+      "id": "R5",
+      "name": "Super Balcony Double Room",
+      "src": "/images/room-5.png",
+      "Price": "$550",
+      "description": "Aenean vehivula ligula eu rhoncus prottitor."
+    },
+    {
+      "id": "R6",
+      "name": "Delux Double Room",
+      "src": "/images/room-6.png",
+      "Price": "$350",
+      "description": "Aenean vehivula ligula eu rhoncus prottitor."
+    }
+  ]
+}
