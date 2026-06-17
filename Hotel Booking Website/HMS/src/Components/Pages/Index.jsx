@@ -14,6 +14,62 @@ import explore5 from "./../../assets/explore-icon-5.png";
 import explore6 from "./../../assets/explore-icon-6.png";
 import element1 from "./../../assets/bg-1.png";
 import element2 from "./../../assets/bg-2.png";
+
+import singleServiceIcon01 from "./../../assets/option-icon-1.png";
+import singleServiceIcon02 from "./../../assets/option-icon-2.png";
+import singleServiceIcon03 from "./../../assets/option-icon-3.png";
+import singleServiceIcon04 from "./../../assets/option-icon-4.png";
+import singleServiceIcon05 from "./../../assets/option-icon-5.png";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
+
+const Rooms = [
+  {
+    id: "R1",
+    name: "Classic Balcony Room",
+    src: bedroomImg,
+    Price: "$500",
+    description: "Aenean vehivula ligula eu rhoncus prottitor.",
+  },
+  {
+    id: "R2",
+    name: "Superior Double Room",
+    src: bedroomImg,
+    Price: "$300",
+    description: "Aenean vehivula ligula eu rhoncus prottitor.",
+  },
+  {
+    id: "R3",
+    name: "Delux Double Room",
+    src: bedroomImg,
+    Price: "$450",
+    description: "Aenean vehivula ligula eu rhoncus prottitor.",
+  },
+  {
+    id: "R4",
+    name: "Superior Double Room",
+    src: bedroomImg,
+    Price: "$450",
+    description: "Aenean vehivula ligula eu rhoncus prottitor.",
+  },
+  {
+    id: "R5",
+    name: "Super Balcony Double Room",
+    src: bedroomImg,
+    Price: "$550",
+    description: "Aenean vehivula ligula eu rhoncus prottitor.",
+  },
+  {
+    id: "R6",
+    name: "Delux Double Room",
+    src: bedroomImg,
+    Price: "$350",
+    description: "Aenean vehivula ligula eu rhoncus prottitor.",
+  },
+];
+
 const Index = () => {
   return (
     <>
@@ -297,6 +353,102 @@ const Index = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Rooms */}
+      <div className="container py-5">
+        <div className="row">
+          <div className="section-title text-center explore-title d-flex flex-column align-items-center">
+            <span>The pleasure of luxury</span>
+            <h2>Rooms & Suites</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+              ab a blanditiis ad laborum maxime nostrum quidem adipisci hic
+              minus, iusto autem minima rem odio ut, eos alias et quod?
+            </p>
+          </div>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1200: { slidesPerView: 3 },
+            }}
+            className="mt-5 border p-3 rounded"
+          >
+            {Rooms.map((Room, index) => (
+              <SwiperSlide key={index}>
+                <div className="single-service mb-3">
+                  <div className="service-thumb">
+                    <a
+                      href={Room.src}
+                      className="gallery-link popup-image"
+                      tabIndex={-1}
+                    >
+                      <img
+                        src={Room.src}
+                        alt={Room.name}
+                        className="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div className="service-content p4">
+                    <div className="day-book">
+                      <ul>
+                        <li>{Room.Price}/Night</li>
+                        <li style={{ cursor: "pointer" }}>Book Now</li>
+                      </ul>
+                    </div>
+                    <h5 className="card-title">{Room.name}</h5>
+                    <p className="card-text mt-3 room-pere">
+                      {Room.description}
+                    </p>
+                    <div className="icon">
+                      <ul>
+                        <li>
+                          <img
+                            src={singleServiceIcon01}
+                            className="img-fluid"
+                            alt=""
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src={singleServiceIcon02}
+                            className="img-fluid"
+                            alt=""
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src={singleServiceIcon03}
+                            className="img-fluid"
+                            alt=""
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src={singleServiceIcon04}
+                            className="img-fluid"
+                            alt=""
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src={singleServiceIcon05}
+                            className="img-fluid"
+                            alt=""
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </>
