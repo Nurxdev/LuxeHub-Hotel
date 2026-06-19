@@ -356,3 +356,134 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+
+/* Resort Section */
+.resort {
+  background-color: var(--section-bg);
+}
+.resort-img {
+  width: 100%;
+}
+.element2 {
+  right: 0 !important;
+}
+
+/* Best Price Section */
+.price-title h2 {
+  font-size: 3rem;
+}
+.price-head {
+  position: relative;
+}
+.price-head span {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  transform: rotate(90deg);
+  background-color: #e1e1e1;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+.price-head-text h2 {
+  font-size: 2rem;
+  font-family: var(--Jost-font);
+  font-weight: 600;
+}
+.price-box h1 {
+  font-family: var(--Jost-font);
+  color: var(--prime-color);
+  font-weight: 600;
+  font-size: 3.3rem;
+  border-bottom: 1px solid rgba(131, 131, 131, 0.2);
+  padding-bottom: 10px;
+}
+.price-box p img {
+  width: 20px;
+  height: 20px;
+}
+.price-box p {
+  display: flex;
+  align-items: center;
+  color: #777;
+}
+.price-btn {
+  border-radius: 0;
+}
+.prices .element2 {
+  width: 170px;
+}
+
+/* Testimonial Section */
+.test-swiper {
+  width: 90%;
+}
+.testimonial-section {
+  background-image: url(assets/test-bg.png);
+}
+
+/* Book Room */
+.book-title h2 {
+  font-size: 2.5rem;
+}
+
+/* Banner Section */
+.banner {
+  height: 500px;
+  background-image: url(assets/video-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-box img {
+  width: 150px;
+  height: 150px;
+}
+.banner-box h1 {
+  font-size: 3rem;
+  color: var(--white-color);
+  font-family: var(--Libre-font);
+  font-weight: 600;
+}
+
+/* Blog Section */
+.blog-content {
+  border: 1px solid #b7b7b7;
+  position: relative;
+  padding: 40px 30px 30px;
+}
+
+.blog-date {
+  position: absolute;
+  background-color: var(--prime-color);
+  color: var(--white-color);
+  width: auto;
+  padding: 6px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  top: -8%;
+}
+
+.blog-btn {
+  height: 35px;
+  padding: 2px 30px;
+  border: none;
+  background-color: transparent;
+  padding-left: 0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.blog-image img{
+  transition: var(--transition-regular);
+}
+.blog-item:hover .blog-image img{
+  transform: scale(1.1);
+}
