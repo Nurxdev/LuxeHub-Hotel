@@ -23,7 +23,18 @@ import singleServiceIcon05 from "./../../assets/option-icon-5.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
+import resorts from "./../../assets/feature.png";
+import user1 from "./../../assets/test-1.png";
+import user2 from "./../../assets/test-2.png";
+import user3 from "./../../assets/test-3.png";
+import quote from "./../../assets/Quote.png";
+import bookingImg from "./../../assets/Bookings.png";
+import playVideo from "./../../assets/play-btn.png";
+import blog1 from "./../../assets/blog-1.jpg";
+import blog2 from "./../../assets/blog-2.jpg";
+import blog3 from "./../../assets/blog-3.jpg";
 
 const Rooms = [
   {
@@ -449,6 +460,459 @@ const Index = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+      </div>
+
+      {/* Resort */}
+      <div className="resort my-5 mb-0">
+        <div className="container-fluid position-relative">
+          <img
+            src={element2}
+            className="element element2 position-absolute"
+            alt=""
+          />
+          <div className="row p-0 align-items-center">
+            <div className="col-lg-6 image-wrapper p-0">
+              <img
+                src={resorts}
+                className="img-fluid shadow-sm resort-img"
+                alt=""
+              />
+            </div>
+
+            <div className="col-lg-4 ps-5 pt-3 text-wrapper resort-content">
+              <div className="section-title about-title">
+                <span>Luxury Hotel & Resort</span>
+                <h2>Pearl Of The Adriatic</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Beatae porro saepe, perspiciatis reprehenderit, nam, ratione
+                  sapiente dolorem magni quam fugit itaque veritatis tempore
+                  optio expedita minima in eaque perferendis. Voluptatum?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Magni, neque eligendi. Odit obcaecati laborum dicta possimus
+                  cumque. Ad atque odit iste, praesentium eum, eligendi
+                  voluptate voluptatem nobis at impedit nemo.
+                </p>
+                <button className="btn discover-btn mt-3">DISCOVER MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Best Price */}
+      <div className="prices my-5 py-5 position-relative">
+        <img
+          src={element1}
+          className="element element1 position-absolute"
+          alt=""
+        />
+        <img
+          src={element2}
+          className="element element2 position-absolute"
+          alt=""
+        />
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="section-title price-title">
+                <span>Best Prices</span>
+                <h2>Extra Services</h2>
+              </div>
+              <p className="mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                autem, rerum quidem omnis, hic veniam nihil eius dolores
+                reprehenderit vitae facere similique fugit tempora. Distinctio
+                dicta voluptate eligendi porro qui.
+              </p>
+              <p className="mt-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium perferendis minus quam exercitationem adipisci
+                labore earum ad autem voluptatibus temporibus optio, voluptate
+                illo magni, aperiam voluptatum aliquid, veritatis nam? Saepe.
+              </p>
+            </div>
+            <div className="col-lg-8">
+              <div className="row">
+                <div className="col-lg-6">
+                  <div className="price-box shadow p-4">
+                    <div className="price-head">
+                      <div className="price-head-text">
+                        <h2>Room Cleaning</h2>
+                        <p>Prefect for erlay-stage startups</p>
+                      </div>
+                      <span>Monthly</span>
+                    </div>
+                    <h1>$59.99</h1>
+                    <p className="mt-4">
+                      <img src={checkIcon} alt="" /> &nbsp; Hotel quis justo at
+                      lorem
+                    </p>
+                    <p>
+                      <img src={checkIcon} alt="" /> &nbsp; Fusce sodales, urna
+                      at tempus
+                    </p>
+                    <p>
+                      <img src={checkIcon} alt="" /> &nbsp; Vestibulum blandit
+                      lorem quis
+                    </p>
+                    <button className="btn price-btn mt-2 w-100">
+                      GET STARTED <i className="ri-arrow-right-s-line"></i>
+                    </button>
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="price-box shadow p-4">
+                    <div className="price-head">
+                      <div className="price-head-text">
+                        <h2>Drinks included</h2>
+                        <p>Prefect for erlay-stage startups</p>
+                      </div>
+                      <span>Monthly</span>
+                    </div>
+                    <h1>$39.99</h1>
+                    <p className="mt-4">
+                      <img src={checkIcon} alt="" /> &nbsp; Hotel quis justo at
+                      lorem
+                    </p>
+                    <p>
+                      <img src={checkIcon} alt="" /> &nbsp; Fusce sodales, urna
+                      at tempus
+                    </p>
+                    <p>
+                      <img src={checkIcon} alt="" /> &nbsp; Vestibulum blandit
+                      lorem quis
+                    </p>
+                    <button className="btn price-btn mt-2 w-100">
+                      GET STARTED <i className="ri-arrow-right-s-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Testimonial */}
+      <div className="testimonial-section py-5">
+        <div className="container">
+          <div className="text-center mb-5">
+            <small className="text-uppercase text-warning fw-bold">
+              Testimonial
+            </small>
+            <h2 className="fw-bold display-5">What Our Clients Says</h2>
+            <p className="text-muted w-75 mx-auto">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatem eveniet molestiae blanditiis culpa.
+            </p>
+          </div>
+
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView={3}
+            spaceBetween={30}
+            loop={true}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              1399: { slidesPerView: 3 },
+              1199: { slidesPerView: 2 },
+              911: { slidesPerView: 1 },
+              0: { slidesPerView: 1 },
+            }}
+            className="test-swiper"
+          >
+            {/* slide 1 */}
+            <SwiperSlide>
+              <div className="testimonial-card p-4 rounded bg-white shadow-sm">
+                <div className="d-flex align-items-center mb-3 justify-content-between">
+                  <img
+                    src={user1}
+                    className="testimonial-img rounded-circle me-3"
+                    alt=""
+                  />
+                  <div className="testimonial-info">
+                    <h5 className="mb-0 fw-bold">Jina Nilson</h5>
+                    <small className="text-muted">Client</small>
+                  </div>
+                  <img src={quote} alt="" />
+                </div>
+                <div className="starts text-waring mb-3">
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill"></i>
+                </div>
+                <p className="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eligendi temporibus quidem adipisci aliquam aperiam deleniti
+                  cupiditate quod sapiente, porro labore corrupti, blanditiis
+                  natus est tempore itaque dignissimos ratione ut harum!
+                </p>
+              </div>
+            </SwiperSlide>
+
+            {/* slide 2 */}
+            <SwiperSlide>
+              <div className="testimonial-card p-4 rounded bg-white shadow-sm">
+                <div className="d-flex align-items-center mb-3 justify-content-between">
+                  <img
+                    src={user2}
+                    className="testimonial-img rounded-circle me-3"
+                    alt=""
+                  />
+                  <div className="testimonial-info">
+                    <h5 className="mb-0 fw-bold">Brality Dscota</h5>
+                    <small className="text-muted">Client</small>
+                  </div>
+                  <img src={quote} alt="" />
+                </div>
+                <div className="starts text-waring mb-3">
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill"></i>
+                </div>
+                <p className="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eligendi temporibus quidem adipisci aliquam aperiam deleniti
+                  cupiditate quod sapiente, porro labore corrupti, blanditiis
+                  natus est tempore itaque dignissimos ratione ut harum!
+                </p>
+              </div>
+            </SwiperSlide>
+
+            {/* slide 3 */}
+            <SwiperSlide>
+              <div className="testimonial-card p-4 rounded bg-white shadow-sm">
+                <div className="d-flex align-items-center mb-3 justify-content-between">
+                  <img
+                    src={user3}
+                    className="testimonial-img rounded-circle me-3"
+                    alt=""
+                  />
+                  <div className="testimonial-info">
+                    <h5 className="mb-0 fw-bold">Roboto Dose</h5>
+                    <small className="text-muted">Client</small>
+                  </div>
+                  <img src={quote} alt="" />
+                </div>
+                <div className="starts text-waring mb-3">
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill"></i>
+                </div>
+                <p className="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eligendi temporibus quidem adipisci aliquam aperiam deleniti
+                  cupiditate quod sapiente, porro labore corrupti, blanditiis
+                  natus est tempore itaque dignissimos ratione ut harum!
+                </p>
+              </div>
+            </SwiperSlide>
+
+            {/* slide 4 */}
+            <SwiperSlide>
+              <div className="testimonial-card p-4 rounded bg-white shadow-sm">
+                <div className="d-flex align-items-center mb-3 justify-content-between">
+                  <img
+                    src={user1}
+                    className="testimonial-img rounded-circle me-3"
+                    alt=""
+                  />
+                  <div className="testimonial-info">
+                    <h5 className="mb-0 fw-bold">Jina Nilson</h5>
+                    <small className="text-muted">Client</small>
+                  </div>
+                  <img src={quote} alt="" />
+                </div>
+                <div className="starts text-waring mb-3">
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill me-1"></i>
+                  <i className="ri-star-fill"></i>
+                </div>
+                <p className="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eligendi temporibus quidem adipisci aliquam aperiam deleniti
+                  cupiditate quod sapiente, porro labore corrupti, blanditiis
+                  natus est tempore itaque dignissimos ratione ut harum!
+                </p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+
+      {/* Book Room */}
+      <div className="py-5 bg-white">
+        <div className="container">
+          <div className="row align-items-center justify-content-center">
+            <div className="col-lg-5 mb-4 d-flex flex-column">
+              <div className="section-title book-title">
+                <span>Make Appointment</span>
+                <h2>Book A Room</h2>
+              </div>
+              <form>
+                <div className="row mb-3 mt-4">
+                  <div className="col-md-6 mb-3">
+                    <label className="form-label d-flex align-items-center">
+                      <i className="bi bi-calendar me-2 text-warning"></i>
+                      check in Date
+                    </label>
+                    <input type="date" className="form-control p-3" />
+                  </div>
+
+                  <div className="col-md-6 mb-3">
+                    <label className="form-label d-flex align-items-center">
+                      <i className="bi bi-calendar2-check me-2 text-warning"></i>
+                      check Out Date
+                    </label>
+                    <input type="date" className="form-control p-3" />
+                  </div>
+                </div>
+                <div className="row mb-3">
+                  <div className="col-md-6 mb-3">
+                    <label className="form-label d-flex align-items-center">
+                      <i className="bi bi-people-fill me-2 text-warning"></i>
+                      Adults
+                    </label>
+                    <select className="form-select p-3">
+                      <option>Adults</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>3+</option>
+                    </select>
+                  </div>
+                  <div className="col-md-6">
+                    <label className="form-label d-flex align-items-center">
+                      <i className="bi bi-door-closed-fill me-2 text-warning"></i>
+                      Room
+                    </label>
+                    <select className="form-select p-3">
+                      <option>Room</option>
+                      <option>Single</option>
+                      <option>Double</option>
+                      <option>Suites</option>
+                    </select>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  className="btn text-white px-4 py-2 mt-2 w-100"
+                >
+                  BOOK TABLE NOW
+                </button>
+              </form>
+            </div>
+            <div className="col-lg-6 d-flex justify-content-end">
+              <img src={bookingImg} className="img-fluid booking-img" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Banner */}
+      <div className="banner">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center banner-box">
+              <img src={playVideo} className="img-fluid" alt="" />
+              <h1>Take A Tour of Luxury</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Blog */}
+      <div className="blog py-5 position-relative">
+        <div className="container">
+          <img
+            src={element1}
+            className="element element1 position-absolute"
+            alt=""
+          />
+          <div className="row">
+            <div className="section-title text-center d-flex flex-column align-items-center">
+              <span>Our Blog</span>
+              <h2>Latest Blog & News</h2>
+              <p style={{ maxWidth: "800px" }}>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore, est libero. Sunt, aperiam! Veniam, amet aspernatur
+                dicta consequuntur, necessitatibus ex rerum nihil id non culpa
+                inventore nemo quaerat accusamus vitae!
+              </p>
+            </div>
+            <div className="blog-wrapper mt-5">
+              <div className="row">
+                <div className="col-lg-4 col-md-6 mb-3">
+                  <div className="blog-item">
+                    <div className="blog-image overflow-hidden">
+                      <img src={blog1} className="img-fluid" alt="" />
+                    </div>
+                    <div className="blog-content">
+                      <div className="blog-date">24th March 2025</div>
+                      <h4 className="mb-3">
+                        Cras accums nulla nec lacus ultries placerat.
+                      </h4>
+                      <p className="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <button className="blog-btn">Read More</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 col-md-6 mb-3">
+                  <div className="blog-item">
+                    <div className="blog-image overflow-hidden">
+                      <img src={blog2} className="img-fluid" alt="" />
+                    </div>
+                    <div className="blog-content">
+                      <div className="blog-date">24th March 2025</div>
+                      <h4 className="mb-3">
+                        Cras accums nulla nec lacus ultries placerat.
+                      </h4>
+                      <p className="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <button className="blog-btn">Read More</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 col-md-6 mb-3">
+                  <div className="blog-item">
+                    <div className="blog-image overflow-hidden">
+                      <img src={blog3} className="img-fluid" alt="" />
+                    </div>
+                    <div className="blog-content">
+                      <div className="blog-date">24th March 2025</div>
+                      <h4 className="mb-3">
+                        Cras accums nulla nec lacus ultries placerat.
+                      </h4>
+                      <p className="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <button className="blog-btn">Read More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
