@@ -35,6 +35,12 @@ import playVideo from "./../../assets/play-btn.png";
 import blog1 from "./../../assets/blog-1.jpg";
 import blog2 from "./../../assets/blog-2.jpg";
 import blog3 from "./../../assets/blog-3.jpg";
+import brand1 from "./../../assets/logo1.png";
+import brand2 from "./../../assets/logo2.png";
+import brand3 from "./../../assets/logo3.png";
+import brand4 from "./../../assets/logo4.png";
+import brand5 from "./../../assets/logo5.png";
+
 
 const Rooms = [
   {
@@ -912,6 +918,58 @@ const Index = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      
+      {/* Brands */}
+      <div className="brand-container position-relative">
+        <div className="container">
+          <div className="row">
+            <Swiper
+              slidesPerView={4}
+              spaceBetween={1}
+              loop={true}
+              autoplay={true}
+              breakpoints={{
+                1399: { slidesPerView: 4 },
+                768: { slidesPerView: 3 },
+                575: { slidesPerView: 2 },
+                0: { slidesPerView: 1 },
+              }}
+              className="brand-swiper w-100"
+            >
+              <SwiperSlide>
+                <div className="brand-img w-100">
+                  <img src={brand1} className="img-fluid" alt="" />
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="brand-img w-100">
+                  <img src={brand2} className="img-fluid" alt="" />
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="brand-img w-100">
+                  <img src={brand3} className="img-fluid" alt="" />
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="brand-img w-100">
+                  <img src={brand4} className="img-fluid" alt="" />
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="brand-img w-100">
+                  <img src={brand5} className="img-fluid" alt="" />
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
