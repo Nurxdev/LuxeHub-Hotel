@@ -487,3 +487,12 @@ header {
 .blog-item:hover .blog-image img{
   transform: scale(1.1);
 }
+
+/* Brand Section */
+.brand-img {
+  text-align: center;
+}
+.brand-container {
+  background-color: #f7f5f1;
+  padding: 90px 0;
+}
