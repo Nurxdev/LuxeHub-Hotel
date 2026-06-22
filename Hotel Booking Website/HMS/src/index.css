@@ -496,3 +496,104 @@ header {
   background-color: #f7f5f1;
   padding: 90px 0;
 }
+
+/* Footer */
+footer {
+  background-color: #777;
+}
+.footer-top {
+  padding-top: 90px;
+  padding-bottom: 40px;
+  background-color: #644222;
+  background-image: url(assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.f-content ul {
+  padding-left: 0;
+  color: var(--white-color);
+}
+.f-content ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;  
+  gap: 10px;
+}
+.f-content ul li span {
+  color: #fffc;
+}
+.f-content ul li i {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  min-height: 50px;
+  min-width: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.f-widget-title {
+  color: var(--white-color);
+  margin-bottom: 30px;
+  font-family: var(--Jost-font);
+}
+.footer-link ul li a{
+  text-decoration: none;
+  color: #fffc;
+  transition: var(--transition-slow);
+}
+.footer-link ul li a:hover{
+  color: var(--white-color);
+}
+.subscribe input{
+  height: 70px;
+  padding-left: 12px;
+  outline: none;
+}
+.subscribe .header-btn{
+  background-color: var(--prime-color);
+  position: absolute;
+  top: 12px;
+  height: 45px;
+  color: var(--white-color);
+  width: 50px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  right: 15px;
+}
+
+.copyright-wrap{
+  background-color: #282828;
+  color: var(--white-color);
+  padding: 20px 0;
+}
+.text-right{
+  text-align: right;
+}
+.footer-social a{
+  font-size: 16px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #101010;
+  text-align: center;
+  line-height: 40px;
+  color: var(--white-color) !important;
+  transition: var(--transition-regular);
+}
+
+.footer-social a:hover{
+  background-color: var(--white-color);
+  color: var(--black-color) !important;
+}
+.copyright-wrap .copyright-text a{
+  color: var(--white-color);
+  letter-spacing: 1px;
+}
