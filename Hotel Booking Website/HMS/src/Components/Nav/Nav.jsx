@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -6,9 +7,9 @@ function Nav() {
       <nav className="navbar navbar-expand-lg position-fixed">
         <div className="container-fluid px-5">
           <p className="navbar-brand d-flex align-items-center m-0">
-            <a href="#" className="logo">
+            <Link href="#" className="logo">
               Luxe<span>Hub</span>
-            </a>
+            </Link>
           </p>
 
           <button
@@ -24,24 +25,24 @@ function Nav() {
             className="collapse navbar-collapse justify-content-center"
             id="navbarNav"
           >
-            <ul className="menu navbar-nav align-items-center">
+<ul className="menu navbar-nav align-items-center">
               <li className="nav-item">
-                <a href="#">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <a href="#">About</a>
+                <Link to="/about">About</Link>
               </li>
               <li className="nav-item">
-                <a href="#">Our Rooms</a>
+                <Link to="/rooms">Our Rooms</Link>
               </li>
               <li className="nav-item">
-                <a href="#">Facilities</a>
+                <Link to="/facilities">Facilities</Link>
               </li>
               <li className="nav-item">
-                <a href="#">Blog</a>
+                <Link to="/blog">Blog</Link>
               </li>
               <li className="nav-item">
-                <a href="#">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
