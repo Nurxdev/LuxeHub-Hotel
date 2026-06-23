@@ -597,3 +597,21 @@ footer {
   color: var(--white-color);
   letter-spacing: 1px;
 }
+
+/* ABOUT PAGE */
+.section-banner{
+  min-height: 450px;
+  background-image: url(assets/section-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.section-wrap ul li a{
+  text-decoration: none !important;
+  color: var(--white-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.section-title p{
+  font-family: var(--Jost-font);
+}
