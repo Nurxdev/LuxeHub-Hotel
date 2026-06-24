@@ -411,7 +411,7 @@ const Index = () => {
                       />
                     </a>
                   </div>
-                  <div className="service-content p4">
+                  <div className="service-content p-4">
                     <div className="day-book">
                       <ul>
                         <li>{Room.Price}/Night</li>
