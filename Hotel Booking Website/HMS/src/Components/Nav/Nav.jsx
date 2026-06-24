@@ -7,7 +7,7 @@ function Nav() {
       <nav className="navbar navbar-expand-lg position-fixed">
         <div className="container-fluid px-5">
           <p className="navbar-brand d-flex align-items-center m-0">
-            <Link href="#" className="logo">
+             <Link to='/' className="logo">
               Luxe<span>Hub</span>
             </Link>
           </p>
