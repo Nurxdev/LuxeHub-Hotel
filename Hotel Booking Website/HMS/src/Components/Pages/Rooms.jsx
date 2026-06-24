@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import bedroomImg from "./../../assets/about-2.png";
 import singleServiceIcon01 from "./../../assets/option-icon-1.png";
@@ -12,6 +12,8 @@ import element2 from "./../../assets/bg-2.png";
 import resorts from "./../../assets/feature.png";
 import bookingImg from "./../../assets/Bookings.png";
 import playVideo from "./../../assets/play-btn.png";
+
+import Nav from "./../Nav/Nav";
 
 const RoomsData = [
   {
@@ -59,8 +61,14 @@ const RoomsData = [
 ];
 
 function Rooms() {
+    const navigate = useNavigate();
+
+  const handleClick = (id) => {
+    navigate(`/RoomsDetails/${id}`);
+  };
   return (
     <>
+      <Nav />
       {/* Page Section */}
       <div className="section-banner d-flex align-items-center text-white">
         <div className="container">
@@ -105,7 +113,7 @@ function Rooms() {
                     <ul>
                       <li>{Room.Price}/Night</li>
                       <li style={{ cursor: "pointer" }}>
-                        <a>Book Now</a>
+                         <a onClick={() => handleClick(Room.id)}>Book Now</a>
                       </li>
                     </ul>
                   </div>
