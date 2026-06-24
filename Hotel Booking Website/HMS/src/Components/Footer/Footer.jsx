@@ -103,9 +103,9 @@ const Footer = () => {
                         placeholder="Your Email.."
                         className="w-100"
                       />
-                      <buttton className="header-btn">
+                      <button className="header-btn">
                         <i className="fa-solid fa-location-arrow"></i>
-                      </buttton>
+                      </button>
                     </form>
                   </div>
                 </div>
