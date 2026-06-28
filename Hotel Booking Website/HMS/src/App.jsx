@@ -1,4 +1,3 @@
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./Components/Nav/Nav";
 import Index from "./Components/Pages/Index";
@@ -7,6 +6,7 @@ import About from "./Components/Pages/About";
 import Rooms from "./Components/Pages/Rooms";
 import RoomsDetails from "./Components/Pages/RoomsDetails";
 import Blogs from "./Components/Pages/Blogs";
+import Contact from "./Components/Pages/Contact";
 function App() {
   return (
     <>
@@ -18,6 +18,7 @@ function App() {
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/RoomsDetails/:id" element={<RoomsDetails />} />
           <Route path="/blog" element={<Blogs />}/>
+          <Route path="/contact" element={<Contact />}/>
         </Routes>
         <Footer />
       </BrowserRouter>
