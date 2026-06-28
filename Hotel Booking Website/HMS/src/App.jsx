@@ -6,7 +6,7 @@ import Footer from "./Components/Footer/Footer";
 import About from "./Components/Pages/About";
 import Rooms from "./Components/Pages/Rooms";
 import RoomsDetails from "./Components/Pages/RoomsDetails";
-
+import Blogs from "./Components/Pages/Blogs";
 function App() {
   return (
     <>
@@ -17,6 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/RoomsDetails/:id" element={<RoomsDetails />} />
+          <Route path="/blog" element={<Blogs />}/>
         </Routes>
         <Footer />
       </BrowserRouter>
