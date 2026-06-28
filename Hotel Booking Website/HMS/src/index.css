@@ -778,3 +778,39 @@ footer {
   font-size: 1rem;
   font-weight: 500;
 }
+
+/* CONTACT PAGE */
+.contact-page {
+  padding-top: 120px;
+}
+.contact-icon {
+  background-color: var(--prime-color) ;
+  width: 50px;
+  height: 50px;
+}
+.contact-icon i {
+  font-size: 1.5rem;
+}
+.input-box input {
+  height: 60px;
+  border: 1px solid var(--prime-color) !important;
+  border-radius: 0;
+  font-size: 1rem;
+  box-shadow: none !important;
+}
+.input-box textarea{
+  height: 150px;
+  border: 1px solid var(--prime-color) !important;
+  border-radius: 0;
+  font-size: 1rem;
+  box-shadow: none !important;
+}
+.contact-form-wrap{
+  padding: 100px;
+}
+.contact-info h5{
+  font-family: var(--Jost-font);
+}
+.contact-info p{
+  color: #777777;
+}
