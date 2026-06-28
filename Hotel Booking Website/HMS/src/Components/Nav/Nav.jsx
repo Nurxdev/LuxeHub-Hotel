@@ -36,9 +36,6 @@ function Nav() {
                 <Link to="/rooms">Our Rooms</Link>
               </li>
               <li className="nav-item">
-                <Link to="/facilities">Facilities</Link>
-              </li>
-              <li className="nav-item">
                 <Link to="/blog">Blog</Link>
               </li>
               <li className="nav-item">
